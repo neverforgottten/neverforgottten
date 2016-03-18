@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8" />
+
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/jquery.slidizle.js"></script>
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+	<script>
+
+		jQuery(function($) {
+
+			// setup slidizle
+			$('[data-slidizle]').slidizle({
+				beforeChange : function(api) {
+					console.log('previous', api.getPreviousSlide().index());
+					console.log('current', api.getCurrentSlide().index());
+					console.log('next', api.getNextSlide().index());
+					console.log('previous active', api.getPreviousActiveSlide().index());
+				}
+			});
+
+		});
+
+	</script>
+	<title>Never Forgotten</title>
+
+    <style>
+    h1{
+      font-size: 22px;
+      font-weight: bold;
+      margin: 5px 0px;
+    }
+    h3{
+      font-size: 14px;
+      font-weight: bold;
+      border-bottom: 1px #ccc solid;
+      padding: 8px 0;
+    }
+    p{
+      line-height: 28px;
+    }
+    body{
+    	margin:0;
+    	padding: 0;
+    }
+    /*.fb{
+		position:absolute;
+		height:35px;
+		width:35px;
+		top:15px;
+		left:50px;
+		z-index:999999;
+	}
+	.tw{
+		position:absolute;
+		height:35px;
+		width:35px;
+		top:15px;
+		left:103px;
+		z-index:999999;
+	}
+	.pt{
+		position:absolute;
+		height:35px;
+		width:35px;
+		top:15px;
+		left:155px;
+		z-index:999999;
+	}*/
+    .contact{
+		position:absolute;
+		height:25px;
+		width:80px;
+		top:15px;
+		right:325px;
+		z-index:999999;
+	}
+	.tc{
+		position:absolute;
+		height:25px;
+		width:120px;
+		top:15px;
+		right:197px;
+		z-index:999999;
+	}
+	.getapp{
+		position:absolute;
+		height:45px;
+		width:140px;
+		top:10px;
+		right:37px;
+		z-index:999999;
+	}
+	
+	.getapp1{
+		position:absolute;
+		height:85px;
+		width:280px;
+		top:600px;
+		right:257px;
+		z-index:999999;
+	}
+    
+    header{
+    	background: url(img/header-bg.png) repeat;
+    	margin:0 -570px; 
+    	overflow: hidden;
+    	padding: 5px;
+     position: fixed;
+     top: 0;
+      left:50%;
+      z-index: 9999;
+      width: 1140px;
+
+    }
+
+    header a.fb1{
+    	width: 35px;
+    	height:35px;
+    	float: left;
+    	margin-left: 50px;
+    	background: url(img/fb.png) no-repeat;
+    	background-size: 100% 100%;
+    }
+    header a.tw1{
+    	width: 35px;
+    	height:35px;
+    	float: left;
+    	background: url(img/tw.png) no-repeat;
+    	background-size: 100% 100%;
+    }
+     header a.pic{
+    	width: 35px;
+    	height:35px;
+    	float: left;
+    	background: url(img/pic.png) no-repeat;
+    	background-size: 100% 100%;
+    }
+    header a.getthe-app{
+    	width: 135px;
+    	height:45px;
+    	float: left;
+    	background: url(img/get-app.png) no-repeat;
+    	background-size: 100% 100%;
+    }
+     header a{
+     	float: left;
+     	margin:0px 5px; 
+     	color: #fff;
+     	text-decoration: none;
+     	font-size: 14px;
+      cursor: pointer;
+     }
+    header h1{
+    	font-size: 24px;
+    	float: left;
+    	font-weight: bold;
+      margin-top: 8px;
+      margin-bottom: 22px;
+    	width: 46%;
+    	padding-right: 80px;
+    	text-align: right;
+    }
+    header a.getthe-app{
+    	float: right;
+    }
+    .head-a{
+    	margin: 10px 15px;
+    }
+    .container{
+      margin-top: 65px;
+    }
+@media screen and (max-width: 700px) {
+	.container{
+		margin:0;
+		padding: 0;
+	}
+	 header{
+	 	text-align: center;
+	 	overflow: hidden;
+    position: fixed;
+	 }
+   header h1{
+    	font-size: 24px;
+    	font-weight: bold;
+    	display: block;
+    	float: none;
+    	width: 100%;
+    	padding: 0;
+    	text-align: center;
+    }
+    header a.fb1{
+    	width: 35px;
+    	height:35px;
+     	float: none;
+    	display: inline-block;
+    	margin-left: 0px;
+    	background: url(img/fb.png) no-repeat;
+    	background-size: 100% 100%;
+    }
+    header a.tw1{
+    	width: 35px;
+    	height:35px;
+     	float: none;
+    	display: inline-block;
+    	background: url(img/tw.png) no-repeat;
+    	background-size: 100% 100%;
+    }
+     header a.pic{
+    	width: 35px;
+    	height:35px;
+     	float: none;
+    	display: inline-block;
+    	background: url(img/pic.png) no-repeat;
+    	background-size: 100% 100%;
+    }
+    header a.getthe-app{
+    	width: 135px;
+    	height:45px;
+    	float: none;
+    	background: url(img/get-app.png) no-repeat;
+    	background-size: 100% 100%;
+    }
+    header a{
+     	float: none;
+     	display: inline-block;
+     	margin:0px 5px; 
+     	color: #fff;
+     	text-decoration: none;
+     	font-size: 14px;
+     }
+     .head-a{
+     	display: block;
+     	float: none;
+     }
+    .slider-content{
+    	width: 100% !important;
+    }
+    .slidizle-slide{
+    	height: 400px !important;
+    }
+}
+    </style>
+	
+</head>
+<body>
+
+
+	<div class="container">
+<header>
+ 	<a href="" class="fb1"></a>
+ 	<a href="" class="tw1"></a>
+ 	<a href="" class="pic"></a>
+ 		<h1>Never Forgotten</h1>
+    <a class="head-a" data-toggle="modal" data-target="#myModal">Contact Us</button>
+ 	<a href="terms-conditions" class="head-a">Terms & Conditions</a>
+
+ 	<a href="" class="getthe-app"></a>
+
+ </header>
+
+		<!-- timeout -->
+	  <section class="container">
+    <h1>Terms of Use</h1>
+    <p>
+      
+      These Terms of Use ("Terms" or “Agreement”) govern your rights and obligations regarding the use of the Never ForgottenApp, an application owned and operated by KOUKLA, LLC, a New York Limited Liability Company (collectively referred to as the "Service" or “Site” as found at www.com) on the Internet or in cellular media. These Terms constitute a fully binding agreement between KOUKLA, LLC (including its affiliates and subsidiaries "We") the proprietor of all rights in and to the Service, and you. It is therefore recommended that you carefully read these Terms.</p>
+
+<p>By using the Never Forgotten App Service, you(‘’YOU’’) signify your assent to these Terms and KOUKLA’s privacy policy ("Privacy Policy"); andall of which are an integral part of these Terms.If you do not agree to these Terms or any of its parts, then you are prohibited from using the Service and we request that you refrain from doing so.</p>
+
+<h3>Key Points</h3>
+<p>The following key points of the Terms of Use are brought for your convenience only. These key points are not in lieu of the full </p>
+<h3>Terms of Use.</h3>
+<p>Road information prevails. The information provided by the Service is not intended to replace the information provided on the road, such as traffic signs, traffic lights, police instructions, etc.</p>
+<p>Entertainment Purposes Only- You agree that use of the Service or Site is for entertainment purposes only.</p>
+<p>
+Adult/Parent/Caregiver Responsibility- You agree that the Service or Site is not intended as a replacement for the care and/or supervision that an Adult, Patent, Guardian or Caregiver gives to their child or infant.
+</p>
+<p>
+Cautious driving. Always drive vigilantly according to road conditions and in accordance with traffic laws. It is strictly forbidden to send traffic updates (such as updates on road accidents and traffic congestion) while driving. Such updates may only be sent after you have stopped your vehicle in an appropriate location permitted by law. Alternatively, such updates may be sent by a passenger other than the driver, provided it does not interfere with the due course of driving and does not distract the driver's attention to the road. In the event you are the cause of an accident or have set events into motion that have caused an accident, you agree to hold blameless Never Forgotten App.Never Forgotten App was created for a specific purpose and any use of the Service in derogation of its intended purpose that may cause direct or indirect damage shall not be the responsibility of Never Forgotten App.  Furthermore, you agree to hold Never Forgotten App blameless forany and all damages caused to yourself or another, either directly or indirectly through the use of the Service. </p>
+
+  <p>Koukla does not take responsibility nor can be held responsible for any actions taken while drivers check their emails or text while driving.
+  </p>
+<p>Road Rage.  You agree to hold Never Forgotten Appblameless for any damages that may be caused by road rage (violent anger caused by the stress and frustration involved in driving a motor vehicle in difficult conditions) or similar situationsthat you directly or indirectly cause by using the service. </p>
+<p>Location-based Service. Some features of the Service may use of detailed location and route information, for example in the form of GPS signals and other information sent by your mobile device on which the Never Forgotten App application is installed and activated.  These features cannot be provided without utilizing this technology. Please note, as described in detail in the Privacy Policy.
+</p>
+
+<p>• The Never Forgotten Appreminds a user via, email, SMS or a phone call where their child or infant is and specifically that their child may be on board of a vehicle that they have just left or that a usermay have forgotten to take with them when exiting their vehicle.  Ultimately, this means that your child or infant may have been forgotten albeit for a few seconds or minutes.  </p>
+
+<p>• Koukla is not responsible for any civil, negligent, criminal or reckless conduct, damages or behavior of its users or for any behavior and damages to its user’s that may be caused by others or observed andreported by others. </p>
+
+<p>• Koukla is not responsible for a user’s past, current or future conduct as it relates to the care of their children of infants or use of the Service.  The Never Forgotten App will recordthe time and location of where you are.  However, such information will only be disclosed if discovered or subpoenaed by court order. The Never Forgotten app will record and keep your personal identifiable information associated with your account. Such information will be retained for a limited period of time and in accordance with the Privacy Policy.  </p>
+
+<p>• TheNever Forgotten Apprequires you to log in by using an existing social media account. The Service will not provide your account information to any other users, and will not make available nor be responsible for any links between your use of the service and your social media accounts. </p>
+
+<p>• Koukla is not responsible for any additional SMS, email, phone, or data charges that may result from a user not shutting off the service’s reminders.  Such additional charges are borne by the user.</p>
+
+<p>The Internet connection is under your responsibility and at your expense. Transmitting and receiving real-time updates to and from the Service, require an online (Wi-Fi or 3G) connection between your cellular device and the Internet. The expenses of such connection are as prescribed by the agreement between you and your communication service provider (such as your cellular company), and according to its applicable terms of payment.</p>
+<p>Free Software. The Service utilizes various Open Source information and Software for map displays, updates and road information. With respect to some cellular telephone devices running the Software, the Software is a free-software.  The Service, its database, Never Forgotten App trademarks, the design of the maps of the Service and the voice files integrated in the Software – all are not free-software.</p>
+
+<p>Your age. The Service is intended for use by users at or above the age of 18 years old, unless authorized or with the knowledge of a parent or guardian. Or t hose users who possesses a licnese to drive in one of the United States or another country.</p>
+<h3>Privacy</h3>
+<p> Your privacy is important to us. While using the Service, personal information may be provided by you or collected by Never Forgotten App as detailed in our Privacy Policy at: http://www.com/. The Privacy Policy explains our practices pertaining to the use of your personal information and we ask that you read such Privacy Policy carefully. By accepting these Terms, you hereby acknowledge and agree to the collection, storage and use of your personal information by Never Forgotten App, subject to this section, the Privacy Policy and any applicable laws and regulation.</p>
+<p>
+Feedback.  Your feedback on the Service we provide is important to us.  By accepting these Terms, you agree that any feedback you may provide is constructive and may be used by Never Forgotten App for whatever purposeNever Forgotten App deems necessary.  You further agree that you claim no ownership to any feedback you may submit and to any implementation by Never Forgotten App of submitted feedback.
+</p>
+
+<h3>THE LICENSE</h3>
+<p>Never Forgotten App Service. Never Forgotten App hereby grants you a free of charge, non-exclusive, time-limited, non-transferrable, non-sub-licensable, revocable license to use the Service for non-commercial purposes, subject to these Terms.</p>
+
+<h3>USING THE SERVICE</h3>
+<p>You may use the Service solely for private and personal purposes. You must not use the Service commercially. For example, you may not offer to third parties a service of your own that uses the Service; you may not resell the Service, offer it for rent or lease, offer it to the public via communication or integrate it within a service of your own, without the prior written consent of Never Forgotten App.</p>
+
+<p>You must not copy, print, save or otherwise use the data from the Site or the Service's database. This clause does not limit the use of the database as intended by the Service and for the purposes of private and personal use of the Service.</p>
+
+<p>When using the Service or the Site you may not engage in scraping, data mining, harvesting, screen scraping, data aggregating, and indexing. You agree that you will not use any robot, spider, scraper or other automated means to access the Site or the Service’s database for any purpose without the express written permission of Never Forgotten App. The Service may not be used in any way not expressly permitted by these Terms.</p>
+
+<p>You may not sell or offer to sell any Data that is freely or otherwise available for purchase on the Service. All Data belongs to Never Forgotten App and may be used and/or sold by Never Forgotten App for any purpose whatsoever.  </p>
+
+<p>Except for your User Content, the Service and all materials therein or transferred thereby, including, without limitation, System, images, text, graphics, illustrations, logos, patents, trademarks, service marks, copyrights, photographs, audio, videos, music, and User Content belonging to other Users (the “Never Forgotten App Content”), and all Intellectual Property Rights related thereto, are the exclusive property of Never Forgotten App and its licensors (including other Users who post User Content to the Service).  Except as explicitly provided herein, nothing in this Agreement shall be deemed to create a license in or under any such Intellectual Property Rights, and you agree not to sell, license, rent, modify, distribute, copy, reproduce, transmit, publicly display, publicly perform, publish, adapt, edit or create derivative works from any Never Forgotten App Content. Use of the Never Forgotten App Content for any purpose not expressly permitted by this Agreement is strictly prohibited.
+You may choose to or we may invite you to submit comments or ideas about the Service, including without limitation about how to improve the Service or our products (“Ideas” of “Feedback”). By submitting any Idea, you agree that your disclosure is gratuitous, unsolicited and without restriction and will not place Never Forgotten App under any fiduciary or other obligation, and that we are free to use the Idea without any additional compensation to you, and/or to disclose the Idea on a non-confidential basis or otherwise to anyone. You further acknowledge that, by acceptance of your submission, Never Forgotten App does not waive any rights to use similar or related ideas previously known to Never Forgotten App, or developed by its employees, or obtained from sources other than you. </p>
+
+<h3>USE RESTRICTIONS</h3>
+<p>There are certain conducts which are strictly prohibited on the Service. Please read the following restrictions carefully. Your failure to comply with the provisions set forth below may result (at Never Forgotten App sole discretion) in the termination of your access to the Service and may also expose you to civil and/or criminal liability.</p>
+
+<p>You may not, whether by yourself or anyone on your behalf: (i) copy, modify, adapt, translate, reverse engineer, decompile, or disassemble any portion of the Content at the Service and/or Site, in any way or publicly display, perform, or distribute them; (ii) make any use of the Content on any other website or networked computer environment for any purpose, or replicate or copy the Content without Never Forgotten App prior written consent; (iii) create a browser or border environment around the Content (no frames or inline linking); (iv) interfere with or violate any third party or other user's right to privacy or other rights, including copyrights and any other intellectual property rights of others, or harvest or collect personal information about visitors or users of the Service and/or Site without their express consent, including using any robot, spider, site search or retrieval application, or other manual or automatic device or process to retrieve, index, or data-mine; (v) defame, abuse, harass, stalk, threaten, or otherwise violate the legal rights of others, including others’ copyrights, and other intellectual property rights; (vi) transmit or otherwise make available in connection with the Service and/or Site any virus, worm, Trojan Horse, time bomb, web bug, spyware, or any other computer code, file, or program that may or is intended to damage or hijack the operation of any hardware, Software, or telecommunications equipment, or any other actually or potentially harmful, disruptive, or invasive code or component; (vii) interfere with or disrupt the operation of the Service and/or Site, or the servers or networks that host the Service and/or Site or make the Service and/or Site available, or disobey any requirements, procedures, policies, or regulations of such servers or networks; (viii) sell, license, or exploit for any commercial purposes any use of or access to the Content and/or the Service and/or Site; (ix) frame or mirror any part of the Service and/or Site without Never Forgotten App prior express written authorization; (x) create a database by systematically downloading and storing all or any of the Content from the Service and/or Site; (xi) forward any data generated from the Service and/or Site without the prior written consent of Never Forgotten App; (xii) transfer or assign your accounts' password, even temporarily, to a third party; (xiii) use the Service and/or Site for any illegal, immoral or unauthorized purpose; (xiv) use the Site, the Service, the Content and/or for non-personal or commercial purposes without Never Forgotten App express prior written consent; or (xv) infringe or violate any of the Terms.</p>
+ 
+<h3>TERMINATION OF USE OF THE SERVICE</h3>
+<p>You may terminate your use of the Service at any time and for whatever reason. You are not obligated to advise Rider of such termination. Never Forgotten App retains the right to block your access to the Service and discontinue your use of the Service, at any time and for any reason Never Forgotten App deems appropriate, at its sole and absolute discretion.To the extent possible, we will advise you of your account termination.</p>
+
+<p>Never Forgotten App reserves the right to change, suspend, remove, discontinue or disable access to the Service (including, but not limited to, the Application) at any time without notice. In no event will Never Forgotten App be liable for the removal of or disabling of access to any portion or feature of the Service (including, but not limited to, the Application).</p>
+
+<p>If you breach any of the terms or conditions of the Terms or Never Forgotten App discontinues the Application, the Terms will automatically terminate. In the event of the termination of the Terms for any reason: (i) the license granted to you in the Terms will immediately terminate; and (ii) you must immediately cease all use of the Application and destroy or erase all copies of the Application in your possession or control. All of the sections of the Terms will survive any termination of the Terms except the License section and the Consent to Use of Data and Mobile Communications section. Any use of the Application after termination is unlicensed and is in violation of the copyright and other rights of Never Forgotten App. Never Forgotten App and its affiliates reserve the right to refuse service, terminate accounts, remove or edit content or cancel orders in their sole discretion.</p>
+  
+ 
+<h3>INTELLECTUAL PROPERTY</h3>
+<p>All intellectual property rights in the Service and to the Site (www.com), the Service and its database, including copyrights, trademarks, industrial designs, patents and trade secrets – are either exclusive property of Never Forgotten App or exclusively licensed to Never Forgotten App. The Service is protected, among others, by United States Copyright Law or by provisions prescribed by any other law, in the United States and abroad.</p>
+
+<p>Copying, distributing, publicly displaying, offering to the public via communication, transferring to the public, modifying, adapting, processing, creating derivative works, selling or leasing, any part of the Service, in any manner or means without the prior written consent of Never Forgotten App, is strictly forbidden. "Never Forgotten App", ‘’Never Forgotten’’, the Never Forgotten App logo, and other trade and/or service marks are property of Never Forgotten App and may not be used in any of the aforementioned means.
+</p>
+
+<p>Any design or interactive features of the maps of the Site and the Service that may be created or that arespecifically created and not protected under open source or licenseis a protected work under copyright laws and all its intellectual property rights remain the exclusive proprietary of Never Forgotten App, including but not limited to the App’s screens, icons and reminder systems. You may not copy or print more than one copy of any data or material appearing on the Site.
+</p>
+
+<p>
+Never Forgotten App may protect the Service by technological means intended to prevent unauthorized use of the Service. You undertake not to circumvent these means. Without derogating Never Forgotten App rights under these Terms or under any applicable law, infringement of the rights in and to the Service will, in and on itself, result in the termination of all your rights under these Terms. In such an event, you must immediately cease any and all uses of the Service, and within your obligations to Never Forgotten App, you undertake to do so.
+</p>
+
+<h3>MOBILE SYSTEM</h3>
+<p>We make available System to access the Service via a mobile device (“Mobile System”). To use the Mobile Systemyou must have a mobile device that is compatible with the Mobile Service. Never Forgotten App does not warrant that the Mobile System will be compatible with your mobile device. Never Forgotten App hereby grants you a non-exclusive, non-transferable, revocable license to use a compiled code copy of the Mobile System for one Never Forgotten App account owned or leased solely by you, for your personal use. You may not: (i) modify, disassemble, decompile or reverse engineer the Mobile System, except to the extent that such restriction is expressly prohibited by law; (ii) rent, lease, loan, resell, sublicense, distribute or otherwise transfer the Mobile System to any third party or use the Mobile System to provide time sharing or similar services for any third party; (iii) make any copies of the Mobile System; (iv) remove, circumvent, disable, damage or otherwise interfere with security-related features of the Mobile System, features that prevent or restrict use or copying of any content accessible through the Mobile System, or features that enforce limitations on use of the Mobile System; or (v) delete the copyright and other proprietary rights notices on the Mobile System. You acknowledge that Never Forgotten App may from time to time issue upgraded versions of the Mobile System, and may automatically electronically upgrade the version of the Mobile System that you are using on your mobile device. You consent to such automatic upgrading on your mobile device, and agree that the terms and conditions of this Agreement will apply to all such upgrades. Any third-party code that may be incorporated in the Mobile System is covered by the applicable open source licenses, free software licenses, third-party licenses, and/orEnd User Licenses, if any, authorizing use of such code. The foregoing license grant is not a sale of the Mobile System or any copy thereof, and Never Forgotten App or its third party partners or suppliers retain all right, title, and interest in the Mobile System (and any copy thereof). Any attempt by you to transfer any of the rights, duties or obligations hereunder, except as expressly provided for in this Agreement, is void. </p>
+
+<p>
+Never Forgotten App reserves all rights not expressly granted under this Agreement. If the Mobile System is being acquired on behalf of the United States Government, then the following provision applies. Use, duplication, or disclosure of the Mobile System by the U.S. Government is subject to restrictions set forth in this Agreement and as provided in DFARS 227.7202-1(a) and 227.7202-3(a) (1995), DFARS 252.227-7013(c)(1)(ii) (OCT 1988), FAR 12.212(a) (1995), FAR 52.227-19, or FAR 52.227-14 (ALT III), as applicable. The Mobile System originates in the United States, and is subject to United States export laws and regulations. The Mobile System may not be exported or re-exported to certain countries or those persons or entities prohibited from receiving exports from the United States. In addition, the Mobile System may be subject to the import and export laws of other countries. You agree to comply with all United States and foreign laws related to use of the Mobile System and the Never Forgotten App Service. (1) Mobile System from iTunes. The following applies to any Mobile Systemyou acquire from the iTunes Store (“iTunes-Sourced Software”): You acknowledge and agree that this Agreement is solely between you and Never Forgotten App, not Apple, and that Apple has no responsibility for the iTunes-Sourced Software or content thereof. Your use of the iTunes-Sourced Software must comply with the App Store Terms of Service. You acknowledge that Apple has no obligation whatsoever to furnish any maintenance and support services with respect to the iTunes-Sourced Software. In the event of any failure of the iTunes-Sourced Software to conform to any applicable warranty, you may notify Apple, and Apple will refund the purchase price for the iTunes-Sourced Software to you; to the maximum extent permitted by applicable law, Apple will have no other warranty obligation whatsoever with respect to the iTunes-Sourced Software, and any other claims, losses, liabilities, damages, costs or expenses attributable to any failure to conform to any warranty will be solely governed by this Agreement and any law applicable to Never Forgotten App as provider of the Service. You acknowledge that Apple is not responsible for addressing any claims of you or any third party relating to the iTunes-Sourced Software or your possession and/or use of the iTunes-Sourced Software, including, but not limited to: (i) product liability claims; (ii) any claim that the iTunes-Sourced Software fails to conform to any applicable legal or regulatory requirement; and (iii) claims arising under consumer protection or similar legislation; and all such claims are governed solely by this Agreement and any law applicable to Never Forgotten App as provider of the Service. You acknowledge that, in the event of any third party claim that the iTunes-Sourced Software or your possession and use of that iTunes-Sourced Software infringes that third party’s intellectual property rights, Never Forgotten App, not Apple, will be solely responsible for the investigation, defense, settlement and discharge of any such intellectual property infringement claim to the extent required by this Agreement. You and Never Forgotten App acknowledge and agree that Apple, and Apple’s subsidiaries, are third party beneficiaries of this Agreement as relates to your license of the iTunes-Sourced Software, and that, upon your acceptance of the terms and conditions of this Agreement, Apple will have the right (and will be deemed to have accepted the right) to enforce this Agreement as relates to your license of the iTunes-Sourced Software against you as a third party beneficiary thereof.
+</p>
+
+<p>If you use the Service through an Apple device, then you agree and acknowledge that:</p>
+<p>Apple, Inc. bears no duties or obligations to you under the Terms, including, but not limited to, any obligation to furnish you with Service maintenance and support;</p>
+<p>
+You will have no claims, and you waive any and all rights and causes of action against Apple with respect to the Service or the Terms, including, but not limited to claims related to maintenance and support, intellectual property infringement, liability, consumer protection, or regulatory or legal conformance;
+</p>
+Apple and Apple’s subsidiaries are third party beneficiaries of the Terms. Upon your acceptance of the Terms, Apple will have the right (and will be deemed to have accepted the right) to enforce these Terms against you as a third party beneficiary thereof.
+<p>PLEASE READ THESE TERMS OF SERVICE CAREFULLY. BY ACCESSING OR USING NEVER FORGOTTEN APP AND ANY SERVICES PROVIDED BY US, YOU AGREE TO BE BOUND BY THE TERMS AND CONDITIONS DESCRIBED HEREIN AND ALL TERMS INCORPORATED BY REFERENCE. IF YOU DO NOT AGREE TO ALL OF THESE TERMS AND CONDITIONS, DO NOT USE THE NEVER FORGOTTEN APPSERVICE OR ANY SERVICES PROVIDED BY US.</p>
+<p>We reserve the right to change or modify any of the terms and conditions contained in the Terms or any policy or guideline of the Service, at any time and in our sole discretion. Any changes or modifications will be effective immediately upon the posting of such revisions on the App or on our website located at http://www.com  (the “Site”) or when such revisions are made available via the Service, and you waive any right you may have to receive specific notice of such changes or modifications. Your continued use of the Service (or any portion thereof) following the posting of changes or modifications will confirm your acceptance of such changes or modifications. Therefore, you should frequently review the Terms and applicable policies from time-to-time to understand the terms and conditions that apply to your use of the Service. If you do not agree to the amended Terms, you must stop using the Service.</p>
+
+<h3>DEVICE USAGE TERMS AND CONDITIONS</h3>
+<p>You acknowledge and agree that your use of the Service must also be in accordance with the usage rules established by your mobile device platform or service provider.</p>
+
+<h3>REGISTRATION DATA</h3>
+<p>You agree to: (i) provide accurate, current and complete information about you as may be prompted by any signup, login and/or registration forms made available via the Service ("Registration Data"); (ii) maintain and promptly update the Registration Data, and any other information you provide to Never Forgotten App, in order to keep it accurate, current and complete; and (iii) accept all risk of unauthorized access to the Registration Data and any other information you provide to Never Forgotten App.</p>
+
+<p>You may use the Service if you are less than 13 years of age, unless authorized or with the knowledge of a parent or guardian.  By using the Never Forgotten App application you verify that you are entering into this agreement with a clear mind.</p>
+
+<p>Never Forgotten App is under no obligation to retain a record of your account or any data or information that you may have stored by means of the account or your use of the Application and Services. You are only authorized to create and use one account for the Service and are prohibited from utilizing alter-egos or other disguised identities when utilizing the Application or Services. You are under no obligation to use or continue to use the Application or Services and may cease use of the Application or Services without notice to Never Forgotten App.</p>
+
+<h3>GRANT AND RESTRICTIONS</h3>
+<p>Subject to the terms, conditions and limitations set forth in the Terms, Never Forgotten App grants you a non-exclusive, non-transferable and revocable license to use the Application on any mobile device that you own or control. The terms of the license will also govern any upgrades provided by Never Forgotten App that replace and/or supplement the original Application, unless such upgrade is accompanied by a separate license, in which case the terms of that license will govern.</p>
+
+<p>You agree not to do, or authorize or permit any third-party to do, any of the following: (i) distribute or make the Application available over a network where it could be used by multiple devices at the same time; (ii) rent, lease, lend, sell, redistribute or sublicense the Application; (iii) copy, decompile, reverse engineer, disassemble, attempt to derive the source code of, modify, or create derivative works of the Application, any updates, or any part thereof (except as and only to the extent any of the foregoing restrictions are prohibited by applicable law); or (iv) remove, alter or obscure any copyright, trademark or other proprietary rights notice on or in the Application. If you violate any of the foregoing restrictions, your use of the Application will immediately cease and you will have infringed the copyright and other rights of Never Forgotten App, which may subject you to prosecution and damages. Never Forgotten App reserves all rights not expressly granted to you in the Terms.</p>
+
+<h3>CONSENT TO USE OF DATA AND MOBILE COMMUNICATIONS</h3>
+<p>You agree that Never Forgotten App may collect and use technical data, personal information and related information in connection with your use of the Application including, but not limited to, contact information and technical information about your device, service and application Software, and peripherals, that are gathered periodically to facilitate the features and functionality of the Application and of Service updates, product support and other services. You also consent to our communicating with you about the Application or in connection with the features, functions and activities contained in the Application. You also agree that any information that the Site or Serviceobtains from your social media accounts be used for whatever purposeNever Forgotten App deems necessary.</p>
+
+<h3>COMPATIBILITY WITH MOBILE DEVICES</h3>
+<p>Never Forgotten App does not warrant that the Service will be compatible or interoperable with your mobile device or any other hardware, Software or equipment installed on or used in connection with your mobile device.</p>
+
+<h3>CARRIER CHARGES</h3>
+<p>You acknowledge and understand that the Service requires and utilizes phone service, data access and text messaging capabilities. Carrier rates for phone, data and text messaging may apply and you are responsible for any such charges.</p>
+
+
+<h3>ELECTRONIC COMMUNICATIONS</h3>
+<p>When you use the Service or send e-mails to us, you are communicating with us electronically, and you consent to receive communications from us electronically. We will communicate with you by e-mail or providing notices via the Service. You agree that all agreements, notices, disclosures and other communications that we provide to you electronically satisfy any legal requirement that such communications be in writing. Any such emails may include marketing and promotional content.</p>
+
+<h3>THIRD-PARTY INTERACTIONS</h3>
+<p>Your use of the Application and your contact, interaction, or dealings with any third-parties arising out of your use of the Service is solely at your own risk. You acknowledge and agree that Never Forgotten App is not responsible or liable in any manner for any loss, damage or harm of any sort incurred as the result of the Service.  Never Forgotten App is not responsible, and shall not be held liable for, the acts, errors, omissions, representations, warranties, breaches or negligence of any such suppliers for any personal injuries, death, property damage, loss, theft or other damages or expenses resulting therefrom.
+</p>
+
+
+
+    </p>
+			
+          <a href="" class="fb"></a>
+          <a href="" class="tw"></a>
+          <a href="" class="pt"></a>
+          
+          <a href="" class="contact"></a>
+          <a href="" class="tc"></a>
+          <a href="" class="getapp"></a>
+          <a href="" class="getapp1"></a>
+          
+        </section>
+
+	
+
+		
+
+	</div>
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content"  style="width: 650px; margin-top:60px; ">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><b>Contact Us</b></h4>
+      </div>
+      <div class="modal-body" style="padding: 0; height: 650px;">
+       <iframe src="https://form.jotform.me/60605408934456"  height="670" width="100%"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
