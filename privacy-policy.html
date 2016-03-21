@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8" />
+
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/jquery.slidizle.js"></script>
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+	<script>
+
+		jQuery(function($) {
+
+			// setup slidizle
+			$('[data-slidizle]').slidizle({
+				beforeChange : function(api) {
+					console.log('previous', api.getPreviousSlide().index());
+					console.log('current', api.getCurrentSlide().index());
+					console.log('next', api.getNextSlide().index());
+					console.log('previous active', api.getPreviousActiveSlide().index());
+				}
+			});
+
+		});
+
+	</script>
+	<title>Never Forgotten</title>
+
+    <style>
+    h1{
+      font-size: 22px;
+      font-weight: bold;
+      margin: 5px 0px;
+    }
+    h3{
+      font-size: 16px;
+      font-weight: bold;
+      border-bottom: 1px #ccc solid;
+      padding: 8px 0;
+    }
+    p{
+      line-height: 28px;
+      font-size: 16px;
+      text-align: justify;
+    }
+    body{
+    	margin:0;
+    	padding: 0;
+    }
+    /*.fb{
+		position:absolute;
+		height:35px;
+		width:35px;
+		top:15px;
+		left:50px;
+		z-index:999999;
+	}
+	.tw{
+		position:absolute;
+		height:35px;
+		width:35px;
+		top:15px;
+		left:103px;
+		z-index:999999;
+	}
+	.pt{
+		position:absolute;
+		height:35px;
+		width:35px;
+		top:15px;
+		left:155px;
+		z-index:999999;
+	}*/
+    .contact{
+		position:absolute;
+		height:25px;
+		width:80px;
+		top:15px;
+		right:325px;
+		z-index:999999;
+	}
+	.tc{
+		position:absolute;
+		height:25px;
+		width:120px;
+		top:15px;
+		right:197px;
+		z-index:999999;
+	}
+	.getapp{
+		position:absolute;
+		height:45px;
+		width:140px;
+		top:10px;
+		right:37px;
+		z-index:999999;
+	}
+	
+	.getapp1{
+		position:absolute;
+		height:85px;
+		width:280px;
+		top:600px;
+		right:257px;
+		z-index:999999;
+	}
+    
+    header{
+    	background: url(img/header-bg.png) repeat;
+    	margin:0 -600px; 
+    	overflow: hidden;
+    	padding: 5px;
+     position: fixed;
+     top: 0;
+      left:50%;
+      z-index: 9999;
+      width: 1240px;
+
+    }
+
+    header a.fb1{
+    	width: 35px;
+    	height:35px;
+    	float: left;
+    	margin-left: 50px;
+    	background: url(img/fb.png) no-repeat;
+    	background-size: 100% 100%;
+    }
+    header a.tw1{
+    	width: 35px;
+    	height:35px;
+    	float: left;
+    	background: url(img/tw.png) no-repeat;
+    	background-size: 100% 100%;
+    }
+     header a.pic{
+    	width: 35px;
+    	height:35px;
+    	float: left;
+    	background: url(img/pic.png) no-repeat;
+    	background-size: 100% 100%;
+    }
+    header a.getthe-app{
+    	width: 135px;
+    	height:45px;
+    	float: left;
+    	background: url(img/get-app.png) no-repeat;
+    	background-size: 100% 100%;
+    }
+     header a{
+     	float: left;
+     	margin:0px 5px; 
+     	color: #fff;
+     	text-decoration: none;
+     	font-size: 14px;
+      cursor: pointer;
+     }
+    header h1{
+    	font-size: 24px;
+    	float: left;
+    	font-weight: bold;
+      margin-top: 8px;
+      margin-bottom: 22px;
+    	width: 43%;
+    	padding-right: 80px;
+    	text-align: right;
+    }
+    header a.getthe-app{
+    	float: right;
+    }
+    .head-a{
+    	margin: 10px 15px;
+    }
+    .container{
+      margin-top: 45px;
+      width: 1250px;
+    }
+@media screen and (max-width: 700px) {
+	.container{
+		margin:0;
+		padding: 0;
+	}
+	 header{
+	 	text-align: center;
+	 	overflow: hidden;
+    position: fixed;
+	 }
+   header h1{
+    	font-size: 24px;
+    	font-weight: bold;
+    	display: block;
+    	float: none;
+    	width: 100%;
+    	padding: 0;
+    	text-align: center;
+    }
+    header a.fb1{
+    	width: 35px;
+    	height:35px;
+     	float: none;
+    	display: inline-block;
+    	margin-left: 0px;
+    	background: url(img/fb.png) no-repeat;
+    	background-size: 100% 100%;
+    }
+    header a.tw1{
+    	width: 35px;
+    	height:35px;
+     	float: none;
+    	display: inline-block;
+    	background: url(img/tw.png) no-repeat;
+    	background-size: 100% 100%;
+    }
+     header a.pic{
+    	width: 35px;
+    	height:35px;
+     	float: none;
+    	display: inline-block;
+    	background: url(img/pic.png) no-repeat;
+    	background-size: 100% 100%;
+    }
+    header a.getthe-app{
+    	width: 135px;
+    	height:45px;
+    	float: none;
+    	background: url(img/get-app.png) no-repeat;
+    	background-size: 100% 100%;
+    }
+    header a{
+     	float: none;
+     	display: inline-block;
+     	margin:0px 5px; 
+     	color: #fff;
+     	text-decoration: none;
+     	font-size: 14px;
+     }
+     .head-a{
+     	display: block;
+     	float: none;
+     }
+    .slider-content{
+    	width: 100% !important;
+    }
+    .slidizle-slide{
+    	height: 400px !important;
+    }
+}
+    </style>
+	
+</head>
+<body>
+
+
+	<div class="container">
+<header>
+ 	<a href="" class="fb1"></a>
+ 	<a href="" class="tw1"></a>
+ 	<a href="" class="pic"></a>
+ 		<h1>Never Forgotten</h1>
+    <a class="head-a" data-toggle="modal" data-target="#myModal">Contact Us</button>
+ 	<a href="terms-conditions" class="head-a">Terms & Conditions</a>
+  <a href="privacy-policy" class="head-a">Privacy Policy</a>
+
+ 	<a href="" class="getthe-app"></a>
+
+ </header>
+
+		<!-- timeout -->
+	  <section class="container">
+    <h1>Sugar Magnolia Farm Privacy Policy</h1>
+   <p></p>
+
+
+<p>
+
+This is the first version of Sugar Magnolia Farm’s (or NEVER FORGOTTEN) Privacy Policy and is effective as of _______.Sugar Magnolia Farm (“Sugar Magnolia Farm,” “we,” or “us”) are committed to protecting your privacy. This Privacy Policy explains our practices regarding the collection, use, disclosure, and protection of information that is collected through our mobile app and our website (collectively, our “Service”), as well as your choices regarding the collection and use of information. </p>
+
+<p>
+
+This Privacy Policy describes how and when Sugar Magnolia Farm collects, uses and shares your information when you use our Services. When using any of our Services you consent to the collection, transfer, manipulation, storage, disclosure and other uses of your information as described in this Privacy Policy. Irrespective of which country you reside in or supply information from, you authorize Sugar Magnolia Farm to use your information in the United States and any other country where Sugar Magnolia Farm operates.</p>
+
+<p>If you have any questions or comments about this Privacy Policy, please contact us at support@________.</p>
+
+<p>Here’s some of the information we collect:</p>
+<p>• Information Collected Upon Registration. When you create or reconfigure a Sugar Magnolia Farm account, you provide some personal information, such as your Twitter (username, password, email address) and Facebook account information (username, password),. Some of this information, for example, your name and username, may be listed publicly on our Services, including on your profile page and in search results. Some Services, such as search, public user profiles and viewing lists, may not require registration.</p>
+<p>• Account Information includes your user name, and e-mail address;</p>
+<p>• Network Performance & Usage Information tells us how you use our network, our products and our services, and how well our equipment and network is performing;</p>
+<p>• Web Browsing & Wireless Application Information tells us about the websites you visit and the mobile applications you use on our network; </p>
+<p>• Location Information tells us where your wireless device is located, as well as your ZIP-code and street address;</p>
+<p>• Geolocation. We collect your unique user identifier and your location through GPS, WiFi, or wireless network triangulation in order to obtain your location for the purposes of providing our Service. We use geolocation data to build a history of occurrences of observed events that are the intent of Sugar Magnolia Farm</p>
+<p>• Cookies. Like many websites, we use cookies and similar technologies to collect additional website usage data and to improve our Services, but we do not require cookies for many parts of our Services such as searching and looking at public user profiles or lists. A cookie is a small data file that is transferred to your computer's hard disk. Sugar Magnolia Farm may use both session cookies and persistent cookies to better understand how you interact with our Services, to monitor aggregate usage by our users and web traffic routing on our Services, and to customize and improve our Services. Most Internet browsers automatically accept cookies. You can instruct your browser, by changing its settings, to stop accepting cookies or to prompt you before accepting a cookie from the websites you visit. However, some Services may not function properly if you disable cookies. 
+</p>
+<p>• Log Data. Our servers may automatically record information ("Log Data") created by your use of the Services. Log Data may include information such as your IP address, browser type, operating system, the referring web page, pages visited, location, your mobile carrier, device and application IDs, search terms, and cookie information. We may receive Log Data when you interact with our Services, for example, when you visit our websites, sign into our Services, interact with our email notifications, use your Sugar Magnolia Farm account to authenticate to a third-party website or application, or visit a third-party website that includes a Sugar Magnolia Farm button or widget. Sugar Magnolia Farm uses Log Data to provide our Services and to measure, customize, and improve them. If not already done earlier, for example, as provided below for Widget Data, we will either delete Log Data or remove any common account identifiers, such as your username, full IP address, or email address, after 18 months.
+</p>
+<p>• Widget Data. We may tailor content for you based on your visits to third-party websites that integrate Sugar Magnolia Farm buttons or widgets. When these websites first load our buttons or widgets for display, we may receive Log Data, including the web page you visited and a cookie that identifies your browser ("Widget Data"). After a maximum of 10 days, we may start the process of deleting or aggregating Widget Data, which is usually instantaneous but in some cases may take up to a week. While we have the Widget Data, we may use it to tailor content for you, such as suggestions for people to follow on Sugar Magnolia Farm. Tailored content is stored with only your browser cookie ID and is separated from other Widget Data such as page-visit information. This feature is optional and not yet available to all users. If you want, you can suspend it or turn it off, which removes from your browser the unique cookie that enables the feature. For Tweets, Log Data, and other information that we receive from interactions with Sugar Magnolia Farm buttons or widgets, please see the other sections of this Privacy Policy.
+</p>
+<p>• Third-Parties.Sugar Magnolia Farmmay use a variety of third-party services to help provide our Services, such as hosting our various blogs and wikis, and to help us understand the use of our Services, such as Google Analytics. These third-party service providers may collect information sent by your browser as part of a web page request, such as cookies or your IP address. Third-party ad partners may share information with us, like a browser cookie ID or cryptographic hash of a common account identifier (such as an email address), to help us measure ad quality and tailor ads. For example, this allows us to display ads about things you may have already shown interest in. If you prefer, you can turn off tailored ads in your privacy settings so that your account is not matched to information shared by ad partners for tailoring ads. 
+</p>
+
+<h3>Here are the ways we collect it:</h3>
+<p> 
+<p>• We get information from you when  use our Service; </p>
+<p>
+<p>• We collect it from how you use our Service;</p>
+
+<h3>Here are some of the ways we use it. To:</h3>
+<p>• Provide services and improve your customer experience;</p>
+<p>• Address network integrity and security issues; </p>
+<p>• Do research and analysis to maintain, protect, develop and improve our network;</p>
+<p>• Let you know about service updates, offers and promotions;</p>
+<p>• Deliver relevant advertising;</p>
+<p>• Create external marketing &analytics reports;</p>
+<p>• Assist in the prevention and investigation of illegal activities and violations of our Terms of Use or Acceptable Use Policies.</p>
+
+<h3>Some examples of who we share your Personal Information with:</h3>
+<p>• With other companies that perform services on our behalf only as needed for them to perform those services. We require them to protect your information consistent with our Policy.</p>
+<p>• With other companies and entities, to:</p>
+<p>•Respond to 911 requests and other emergencies or exigencies;</p>
+<p>•Comply with court orders and other legal process; </p>
+<p>•Assist with identity verification, and preventing fraud and identity theft;</p>
+<p>•Enforce our agreements and property rights; and </p>
+<p>•Obtain payment for products and services including the transfer or sale of delinquent accounts to third parties for collection </p>
+
+<h3>Details on Personal and Anonymous & Aggregate Information</h3>
+<p>• What is Personal Information? Information that identifies or reasonably can be used to identify you.</p>
+<p>• What is Anonymous? This is information that doesnot identify you and cannot reasonably be used to identify you specifically.</p>
+<p>• What is Aggregate? We take a large number of individual’s data and combine it into anonymous groups or categories.</p>
+<p>• How we use this information? We use and share this information in many ways including research, analysis, marketing and relevant advertising. </p>
+
+<h3>Our privacy commitments</h3>
+<p>• We donot sell your Personal Information to anyone for any purpose.</p>
+<p>• We keep your Personal Information in our records while you are a user, or until it is no longer needed for business, tax or legal purposes.
+<p>• We will keep your information safe using encryption or other appropriate security controls.
+
+<h3>Modifying Your Personal Information
+<p>• If you are a registered user of our Services, we may provide you with tools and account settings to access or modify the personal information you provided to us and associated with your account.
+<p>• You may also permanently delete your Sugar Magnolia Farm account by deleting the app from your phone.
+
+
+<h3>Our Online Privacy Policy for Children</h3>
+<p>• We do not knowingly collect personally identifying information from anyone under the age of 13, unless authorized or with the knowledge of a parent or guardian.</p>
+
+<h3>Your Choices & Controls</h3>
+<p>• You may have choices about which types of advertising you get from us; </p>
+<p>• You may control whether your anonymous information is used in our External Marketing & Analytics Reports; </p>
+<p>• You may choose whether to receive marketing calls, e-mails or text messages from us;</p>
+<p>• You may have a choice about how we use your Customer Proprietary Network Information;</p>
+
+<h3>Your California Privacy Rights</h3>
+<p>California Civil Code Section 1798.83 entitles California customers to request information concerning whether a business has disclosed Personal Information to any third parties for their direct marketing purposes. As stated in this Privacy Policy, we will not sell your Personal Information to other companies and we will not share it with other companies for them to use for their own marketing purposes without your consent.</p>
+
+<p>California Web Site Data Collection & "Do Not Track" Notices</p>
+<p> Web Site Data Collection: We do not knowingly allow other parties to collect personally identifiable information about your online activities over time and across third-party web sites when you use our websites and services. </p>
+
+<p>California customers who wish to request further information about our compliance with these requirements, or have questions or concerns about our </p>
+
+<p>privacy practices and policies may contact us:</p>
+<p>David Postolski, Esq.
+Gearhart Law, LLC</br>
+41 River Road</br>
+Summit, NJ 07901</br>
+c/o LINX Impact, LLC</br>
+david@gearhartlaw.com</p>
+
+
+
+ 
+			
+          <a href="" class="fb"></a>
+          <a href="" class="tw"></a>
+          <a href="" class="pt"></a>
+          
+          <a href="" class="contact"></a>
+          <a href="" class="tc"></a>
+          <a href="" class="getapp"></a>
+          <a href="" class="getapp1"></a>
+          
+        </section>
+
+	
+
+		
+
+	</div>
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content"  style="width: 650px; margin-top:60px; ">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><b>Contact Us</b></h4>
+      </div>
+      <div class="modal-body" style="padding: 0; height: 650px;">
+       <iframe src="https://form.jotform.me/60605408934456"  height="670" width="100%"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
